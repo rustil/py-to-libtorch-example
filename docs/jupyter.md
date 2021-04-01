@@ -1,5 +1,5 @@
 Suppose you run with:
-`docker run -d --cap-add sys_ptrace -p127.0.0.1:2222:22 -p127.0.0.1:8888:8888 --name pytorch_to_cpp pytorch_to_cpp:latest`
+`docker run -d --cap-add sys_ptrace -p127.0.0.1:2222:22 -p127.0.0.1:8888:8888 --name qu-pytorch rustil/qu-pytorch:ssh`
 
 then you could ssh into the container and start a jupyter notebook server:
 
@@ -7,7 +7,7 @@ then you could ssh into the container and start a jupyter notebook server:
 
 switch to the pytorch environment (which includes jupyter):
 
-`conda activate pytorch`
+`conda activate`
 
 and finally start a notebook server:
 
